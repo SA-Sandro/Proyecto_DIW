@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Sandro SA">
+    <meta name="description" content="Olea Desarrollo web Sandro SA">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título -->
+    <title>Productos</title>
+    <!-- Icono página -->
+    <link rel="shortcut icon" href="images/_ea0c53de-6cc4-4b54-b638-51a6a4e62a24.png">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilosFooterHeader.css">
+    <link rel="stylesheet" href="css/estilosProductos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="js/localization.js" type="text/JavaScript"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md margenes">
+            <div class="container-fluid">
+                <button class="burguer navbar-toggler m-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-flex align-items-center" href="principal.html">
+                    <img id="iconn" src="images/_ea0c53de-6cc4-4b54-b638-51a6a4e62a24.png" width="70"
+                        alt="Logo del proyecto">
+                    <span class="text-black">Olea</span>
+                </a>
+                <div class="collapse navbar-collapse d-flex-md  flex-row-reverse align-items-center mr-2"
+                    id="navbar-Toggler">
+
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" aria-current="page" href="principal.html"><i
+                                    class="bi bi-house-door-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-i18n-key="sobreNosotros" class="nav-link" aria-current="page" href="quienes_somos.html">Sobre
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-i18n-key="nuestrosProductos" class="nav-link" href="productos.html">Nuestros productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-i18n-key="tienda" class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-i18n-key="contacto" class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <div class="drp_props dropdown">
+                                    <button data-i18n-key="idiomas" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Idioma
+                                    </button>
+                                    <ul class="dropdown-menu px-3 " aria-labelledby="dropdownMenuButton1">
+                                        <div class="form-check dropdown-item" value="es">
+                                            <input checked class="españa form-check-input" value="es" type="radio"
+                                                name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label data-i18n-key="labelEspaña" class="form-check-label"
+                                                for="flexRadioDefault1">
+                                                Español 
+                                            </label>
+                                            <img src="images/555635.png" height="30px" width="30px">
+                                        </div>
+                                        <div class="form-check dropdown-item">
+                                            <input class="ingles form-check-input" type="radio"
+                                                name="flexRadioDefault" id="flexRadioDefault2">
+                                            <label data-i18n-key="labelIngles" class=" form-check-label"
+                                                for="flexRadioDefault2">
+                                                Inglés 
+                                            </label>
+                                            <img src="images/ingles.png" height="30px" width="30px">
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="tituloPagina container-fluid d-flex justify-content-center align-items-center">
+            <div data-i18n-key="tiposProductos">TIPOS DE PRODUCTOS</div>
+        </section>
+        <section class="container tiposProductos d-flex justify-content-center mt-3">
+            <div class="maxAncho">
+                <div class="">
+                    <div class="contImagen text-center">
+                        <img class="rounded" src="images/aceites.jpg" alt="aceite" width="250px" height="185px">
+                    </div>
+                    <div class="divButton text-center d-flex align-items-center justify-content-center">
+                        <button data-i18n-key="aceites" class=" m-2 rounded" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#descripcionAceites" aria-expanded="false"
+                            aria-controls="descripcionAceites">Aceites</button>
+                    </div>
+                    <div class="anchoP m-auto collapse" id="descripcionAceites">
+                        <p data-i18n-key="productoAceite"> Uno nuestros productos estrellas son los aceites. En Olea contamos con una amplia diversidad
+                            de aceites procedente
+                            de las diferentes variedades locales de aceitunas, tales como: "Picual",
+                            "Picuda","Royal","Cornezuelo", etc. </p>
+                    </div>
+                </div>
+                <div class="margen">
+                    <div class="text-center">
+                        <img class="rounded" src="images/elaboradoConAceite.jpg" alt="aceite" width="250px"
+                            height="185px">
+                    </div>
+                    <div class="text-center d-flex align-items-center justify-content-center">
+                        <button data-i18n-key="productoBasadoAceiteOliva" class="m-2 rounded" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#descripcionElaboradoConAceite" aria-expanded="false"
+                            aria-controls="descripcionElaboradoConAceite">Productos basados en<br> aceite de
+                            oliva</button>
+                    </div>
+                    <div class="anchoP m-auto collapse" id="descripcionElaboradoConAceite">
+                        <p data-i18n-key="textoBasadoAceiteOliva">Gracias a sus múltiples beneficios y a su polivalencia culinaria, nuestro aceite sirve para
+                            elaborar una gran variedad de productos
+                            basados en este. Como por ejemplo, nuestro famoso chocolate elaborado con aceite de oliva
+                            virgen extra.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center contImagen">
+                        <img class="rounded"
+                            src="images/aceitunas-variadas-cuencos-arcilla-tablon-madera-blanca-cerca.jpg" alt="aceite"
+                            width="250px" height="185px">
+                    </div>
+                    <div class="text-center divButton">
+                        <button data-i18n-key="productoAceitunas" class="m-2 rounded" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#descripcionAceitunas" aria-expanded="false"
+                            aria-controls="descripcionAceitunas">Aceitunas</button>
+                    </div>
+                    <div class="anchoP m-auto collapse" id="descripcionAceitunas">
+                        <p data-i18n-key="textoAceitunas">¿A quién no le gusta tomarse una tapita de aceitunas mientras almuerza? En Olea nos
+                            encargamos
+                            de ofertar diversas variedades de aceitunas para aquellos amantes de su sabor.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container irTienda mt-5 d-flex justify-content-center">
+            <div class="divIcon d-flex justify-content-center align-items-center">
+                <a data-i18n-key="verProductosTienda" href="tienda.html"> Ver productos en nuestra tienda</a>
+                <i class="mx-2 bi bi-search"></i>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer class="d-flex flex-column align-items-center justify-content-center">
+        <span class="borderTop"></span>
+        <div>
+            <section>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                    role="button"><i class="bi bi-facebook"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                    role="button"><i class="bi bi-twitter"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ca69ca;" href="#!"
+                    role="button"><i class="bi bi-instagram"></i></a>
+            </section>
+        </div>
+        <div class="text-center pb-1 mb-4">
+            © 2020 Copyright:
+            <a style="text-decoration: none;color: black;" href="#">Sandro Suárez Aranda</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

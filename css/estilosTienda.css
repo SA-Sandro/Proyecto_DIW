@@ -1,0 +1,113 @@
+.carrito {
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 30px;
+    color: #cfd666;
+    font-size: 2rem;
+    transition: 0.2s ease;
+}
+
+.carrito:hover {
+    transform: translateY(-10px);
+}
+
+.tituloTienda {
+    margin-top: 15px;
+    padding: 10px;
+    min-height: 400px;
+    background-image: url(../images/olive-oil-507129_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    padding: 10px;
+    background-color: #63682dd2;
+    color: #cfd666;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.input-group input {
+    max-width: 600px;
+}
+
+.input-group-append {
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+.dropdown-menu{
+    max-width: 400px;
+    padding: 20px;
+}
+.dropdown-menu label{
+    text-wrap: pretty;
+}
+
+.btn_props {
+    color: white;
+    background-color: #d53b1e;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: 'Amatic SC', sans-serif;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+.tituloProducto{
+    padding-bottom: 0;
+    border-bottom: 2px solid #63682dd2;
+    color: #cfd666;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.productos{
+    display: grid;
+    justify-items: center;
+}
+.producto{
+    max-width: 300px;
+}
+.nombreProducto{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.descripcion{
+    margin-top: 5px;
+    text-wrap: pretty;
+    font-family: 'Roboto', sans-serif;
+}
+.addToCart{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #63682dd2;
+    transition: all 0.2s ease;
+    
+}
+.addToCart:hover{
+    transform: translateY(5px);
+    background-color: #cfd666;
+    color: black;
+    font-weight: bold;
+}
+.precio{
+    color: #63682dd2;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+@media all and (min-width: 768px){
+    .productos{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media all and (min-width: 1024px){
+    .tipos_productos{
+        max-width: 700px;
+    }
+}

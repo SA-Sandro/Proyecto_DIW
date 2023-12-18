@@ -1,0 +1,117 @@
+.tituloPagina {
+    margin-top: 15px;
+    padding: 10px;
+    min-height: 300px;
+    background-image: url(../images/fondoTiposProductos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.tituloPagina div {
+    background-color: #63682dd2;
+    color: #cfd666;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.maxAncho {
+    max-width: 700px;
+}
+
+.anchoP {
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.anchoP p {
+    padding: 15px;
+    text-align: justify;
+    text-wrap: balance;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tiposProductos button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #63682dd2;
+    transition: all 0.2s ease;
+}
+
+.tiposProductos button:hover {
+    transform: translateY(5px);
+    background-color: #cfd666;
+    color: black;
+}
+
+.margen {
+    margin: 20px;
+}
+
+.contImagen {
+    max-height: 185px;
+}
+.irTienda{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.irTienda a{
+    text-decoration: none;
+    color: #f76540;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: bolder;
+}
+.irTienda a:hover{
+    border-bottom: 2px solid #f76540;
+}
+.divIcon i{
+    color: #f76540;
+}
+
+
+@media all and (min-width:768px) {
+    .maxAncho {
+        min-width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+    }
+
+    .maxAncho div:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .anchoP {
+        max-width: 400px;
+    }
+    .anchoP p {
+        text-align: center;
+
+    }
+
+    .margen {
+        margin: 0;
+    }
+
+    .divButton {
+        min-height: 70px;
+    }
+
+}
+
+@media all and (min-width:1024px) {
+
+    .maxAncho {
+        grid-gap: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .maxAncho div:nth-child(3) {
+        grid-column: initial;
+    }
+
+}

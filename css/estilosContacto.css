@@ -1,0 +1,102 @@
+.btn_props {
+    font-size: 1.5rem;
+    padding: 10px 40px 10px 10px;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: bold;
+}
+.btn_props a{
+    position: relative;
+}
+.btn_props button {
+    color: white;
+    background-color: #f76540;
+    
+}
+.iconRelative{
+    color: white;
+    position: absolute;
+    bottom: 36%;
+    right: 5%;
+    
+    
+}
+.btn_props button:hover + .iconRelative,
+.btn_props button:hover
+ {
+    color: black;
+    background-color: white;
+}
+.props_h3,
+.props_h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #cfd666;
+}
+
+.divDireccion p,
+.divFormulario p {
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+.location {
+    color: rgb(214, 49, 49);
+}
+
+.phone {
+    color: rgb(13, 13, 247);
+}
+
+.mail {
+    color: black;
+}
+
+.divFormulario,
+.divDireccion {
+    margin: auto;
+    max-width: 500px;
+}
+
+@media all and (min-width:768px) {
+    iframe {
+        height: 450px;
+    }
+}
+
+@media all and (min-width:1024px) {
+    .divForm_iframe {
+        display: flex;
+    }
+
+    .divFormulario {
+        margin-left: 10px;
+    }
+}
+
+@media all and (min-width:1440px) {
+    iframe {
+        width: 900px;
+        height: 700px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .divMapa {
+        position: relative;
+    }
+
+    .divDireccion {
+        background-color: white;
+        position: absolute;
+        z-index: 2;
+        right: 45%;
+        bottom: -70px;
+        width: 600px;
+    }
+
+    .divForm_iframe {
+        margin-bottom: 200px;
+    }
+}

@@ -1,5 +1,5 @@
 let locale = "";
-const url = "https://github.com/SA-Sandro/Proyecto_DIW/blob/master/localization/localize.json";
+const url = "https://raw.githubusercontent.com/SA-Sandro/Proyecto_DIW/gh-pages/localization/localize.json";
 
 let traducciones = {};
 let variableRandom = {};

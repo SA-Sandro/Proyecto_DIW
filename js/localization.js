@@ -5,7 +5,13 @@ let traducciones = {};
 let variableRandom = {};
 document.addEventListener("DOMContentLoaded", () => {
 
-    fetch(url)
+    fetch(url,{
+         method: 'GET',
+   headers: misCabeceras,
+   mode: 'no-cors', // <---
+   cache: 'default'
+
+    })
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetch(url,{
          method: 'GET',
-   headers: misCabeceras,
    mode: 'no-cors', // <---
    cache: 'default'
 
